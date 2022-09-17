@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./weather";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <header>
+          Weather App
+        </header>
+        <Weather />
+        <footer>
+          This Project was coded by{" "}
+          <a href="https://www.linkedin.com/in/wofai-martins-77537894">
+            Wofai Elizabeth Martins
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/Elzeebeauty/weather-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-source on GitHub,
+          </a>{" "}
+          <a
+            href="https://luminous-marigold-c22555.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
